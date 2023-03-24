@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1455539E29CDF054007EC535 /* Alert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1455539D29CDF054007EC535 /* Alert.xib */; };
 		6A2428FD814DCF46ED53BD00 /* Pods_PinkoWin_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CFA4AF77380FD68B3CE2E8 /* Pods_PinkoWin_iOS.framework */; };
 		82AFBEDA54B16DBF6CC005E8 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8519DD62795F0EA83E1991 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		8852198D29CB30D600A96E49 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852198C29CB30D600A96E49 /* MenuViewController.swift */; };
@@ -26,7 +27,6 @@
 		8879217429CD9CBB004F07DB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879217329CD9CBB004F07DB /* SettingsViewController.swift */; };
 		8879217D29CDA948004F07DB /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879217C29CDA948004F07DB /* NotificationService.swift */; };
 		8879218129CDA948004F07DB /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8879217A29CDA947004F07DB /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8879218929CDB33F004F07DB /* Alert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8879218829CDB33F004F07DB /* Alert.xib */; };
 		8879218B29CDB4C7004F07DB /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879218A29CDB4C7004F07DB /* State.swift */; };
 		8879218D29CDB4E9004F07DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879218C29CDB4E9004F07DB /* Constants.swift */; };
 		8879218F29CDBFCA004F07DB /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8879218E29CDBFCA004F07DB /* backgroundMusic.mp3 */; };
@@ -68,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		07CFA4AF77380FD68B3CE2E8 /* Pods_PinkoWin_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkoWin_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1455539D29CDF054007EC535 /* Alert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alert.xib; sourceTree = "<group>"; };
 		1A8519DD62795F0EA83E1991 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFF7568BAC3329935DEFB0D /* Pods-PinkoWin iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWin iOS.release.xcconfig"; path = "Target Support Files/Pods-PinkoWin iOS/Pods-PinkoWin iOS.release.xcconfig"; sourceTree = "<group>"; };
 		67D200178B54E55D6DABDD4C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 		8879217E29CDA948004F07DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8879218629CDA981004F07DB /* PinkoWin iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PinkoWin iOS.entitlements"; sourceTree = "<group>"; };
 		8879218729CDAAF5004F07DB /* PinkoWin-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PinkoWin-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
-		8879218829CDB33F004F07DB /* Alert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Alert.xib; path = ../../../../../Project/AviatorGame/Helpers/Alert/Alert.xib; sourceTree = "<group>"; };
 		8879218A29CDB4C7004F07DB /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		8879218C29CDB4E9004F07DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8879218E29CDBFCA004F07DB /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				8879216029CC93E8004F07DB /* Alert.swift */,
-				8879218829CDB33F004F07DB /* Alert.xib */,
+				1455539D29CDF054007EC535 /* Alert.xib */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -326,6 +326,7 @@
 				8877CFE429C8A8BF00227018 /* Resources */,
 				48BD96BE1ECA7B8B5FA81249 /* [CP] Embed Pods Frameworks */,
 				8879218529CDA948004F07DB /* Embed Foundation Extensions */,
+				1455539C29CDEF49007EC535 /* Web App */,
 			);
 			buildRules = (
 			);
@@ -399,9 +400,9 @@
 			files = (
 				8877CFEF29C8A8BF00227018 /* Main.storyboard in Resources */,
 				889A24A729CC7ED600E61BC9 /* GoogleService-Info.plist in Resources */,
+				1455539E29CDF054007EC535 /* Alert.xib in Resources */,
 				8879218F29CDBFCA004F07DB /* backgroundMusic.mp3 in Resources */,
 				8877CFF229C8A8BF00227018 /* LaunchScreen.storyboard in Resources */,
-				8879218929CDB33F004F07DB /* Alert.xib in Resources */,
 				8879219129CDBFD6004F07DB /* ball.mp3 in Resources */,
 				8877CFF629C8A8BF00227018 /* Assets.xcassets in Resources */,
 			);
@@ -417,6 +418,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1455539C29CDEF49007EC535 /* Web App */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Web App";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_NAME=\"onboarding\"\nEMBEDDED_DIR=\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.app/portals\"\nEMBEDDED_APP=\"${SRCROOT}/../dist\"\nZIP_FILE=\"${APP_NAME}.zip\"\n\nmkdir \"${EMBEDDED_DIR}\"\n\nif [ -d \"${EMBEDDED_DIR}/${APP_NAME}\" ]\nthen\n    cd \"${EMBEDDED_DIR}\"\n    rm -r \"${APP_NAME}\"\nfi\n\nmkdir \"${EMBEDDED_DIR}/${APP_NAME}\"\n\nif [ -d \"${EMBEDDED_APP}\" ] \nthen\n    cd \"${EMBEDDED_APP}\"\n    zip -vr \"${ZIP_FILE}\" * -x \"*.DS_Store\"\n    unzip \"${ZIP_FILE}\" -d \"${EMBEDDED_DIR}/${APP_NAME}\"\n    rm \"${ZIP_FILE}\"\nelse\n    echo \"App ${APP_NAME} has not been built!\"\n    exit 999\nfi\n";
+		};
 		48BD96BE1ECA7B8B5FA81249 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

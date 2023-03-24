@@ -4,7 +4,7 @@ PODS:
   - CapacitorCamera (4.1.4):
     - Capacitor
   - CapacitorCordova (4.7.0)
-  - CapgoInappbrowser (0.3.7):
+  - CapgoInappbrowser (0.3.22):
     - Capacitor
   - Firebase/Analytics (10.6.0):
     - Firebase/Core
@@ -176,7 +176,7 @@ SPEC CHECKSUMS:
   Capacitor: 747a1e47077e8f82abf2209867c440d7366ad68c
   CapacitorCamera: 8e1f9eac46c6a0b7df5619d20f021d852ccaa99a
   CapacitorCordova: 49b11f2ce72487cd751aad7181606d2a710b1549
-  CapgoInappbrowser: 88ecb3efe6782e081100c7b8af1478767c9707fd
+  CapgoInappbrowser: bf5c99a95a7a98528c34fc3a8bf9710244c9edb7
   Firebase: f13680471b021937f2230ea8503c7809d8c29806
   FirebaseAnalytics: 9f382605c5ee412b039212f054bf7a403d9850c1
   FirebaseAppCheckInterop: 8e907eea79958960a8bd2058e067f31e03a7914b
@@ -198,6 +198,6 @@ SPEC CHECKSUMS:
   OneSignalXCFramework: 087934ab0d4d7445fcf1c015c7c782359e26c020
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
 
-PODFILE CHECKSUM: 3ee32ef998c8bc1fb5a82c38812371602707d7c2
+PODFILE CHECKSUM: 9b1eab07c35dc5c07c247b99702a0a0ec9d1db5f
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.11.3
