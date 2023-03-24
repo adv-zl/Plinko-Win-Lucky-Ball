@@ -1,0 +1,6 @@
+{
+"appId": "io.ionic.portals.onboarding",
+"appName": "Portals Onboarding",
+"webDir": "dist",
+"bundledWebRuntime": false
+}

@@ -1,0 +1,92 @@
+{
+  "name": "cordova-plugin-ionic",
+  "version": "5.5.2",
+  "cordova": {
+    "id": "cordova-plugin-ionic",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Ionic Cordova SDK",
+  "scripts": {
+    "apply-dev": "npm run build && ./scripts/apply-changes.sh",
+    "create-dev": "./scripts/create-local-app.sh",
+    "clean": "rimraf dist",
+    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "precommit": "npm run lint",
+    "watch": "tsc -w",
+    "watch-dev": "watch 'npm run apply-dev' ./www",
+    "build": "npm run clean && tsc && ngc -p tsconfig.ng.json && ./scripts/ng-prepare.sh",
+    "sync-plugin-xml": "sync-cordova-xml2 package.json plugin.xml --output=plugin.xml",
+    "version": "npm run sync-plugin-xml && git add plugin.xml && ./scripts/update-plugin-version-code.sh",
+    "prepublishOnly": "npm run build",
+    "test": "echo 'We should really get unit tests running'",
+    "release": "npm run build && np --any-branch",
+    "docs": "./scripts/docs.sh"
+  },
+  "repository": "https://github.com/ionic-team/cordova-plugin-ionic.git",
+  "issue": "https://github.com/ionic-team/cordova-plugin-ionic/issues",
+  "bugs": {
+    "url": "https://github.com/ionic-team/cordova-plugin-ionic/issues"
+  },
+  "keywords": [
+    "ionic",
+    "cordova",
+    "deploy",
+    "liveupdates",
+    "mobile",
+    "hybrid",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Ionic",
+  "contributors": [
+    {
+      "name": "Max Lynch",
+      "email": "max@ionic.io"
+    },
+    {
+      "name": "William Pelrine",
+      "email": "rudy@ionic.io"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/compiler": "^9.1.1",
+    "@angular/compiler-cli": "^9.1.1",
+    "@angular/core": "^7.2.15",
+    "@types/cordova": "0.0.34",
+    "jest": "^22.4.3",
+    "np": "^3.0.4",
+    "rimraf": "^2.6.2",
+    "sync-cordova-xml2": "0.0.2",
+    "ts-jest": "^22.4.2",
+    "tslint": "^5.9.1",
+    "tslint-ionic-rules": "0.0.14",
+    "typedoc": "^0.11.1",
+    "typedoc-plugin-markdown": "^1.1.6",
+    "watch": "^1.0.2"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      ".(ts)": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "tests/.*\\.(ts|js)$"
+  },
+  "dependencies": {
+    "typescript": "3.8.3"
+  }
+}
