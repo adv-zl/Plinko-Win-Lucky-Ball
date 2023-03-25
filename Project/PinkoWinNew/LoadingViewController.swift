@@ -86,7 +86,7 @@ extension LiveUpdate {
     private static let activeChannel = UserDefaults.standard.string(forKey: "active_channel") ?? "production"
     
     static let onboarding = Self(
-        appId: "80f4d205",
+        appId: "e858d094",
         channel: activeChannel,
         syncOnAdd: false
     )

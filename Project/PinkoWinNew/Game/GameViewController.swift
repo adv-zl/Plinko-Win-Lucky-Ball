@@ -14,9 +14,9 @@ class GameViewController: PortraitViewController {
         skView.presentScene(scene)
        
         
-        skView.ignoresSiblingOrder = true
-        skView.showsFPS = true
-        skView.showsNodeCount = true
+        skView.ignoresSiblingOrder = false
+        skView.showsFPS = false
+        skView.showsNodeCount = false
         
         setupDefaults()
     }

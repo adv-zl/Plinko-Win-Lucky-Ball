@@ -346,7 +346,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     viewController?.showAlert(delegate: viewController as! AlertDelegate, titleText: "GIFT BOX", subTitle: "Get 100 gold as a gift", image: UIImage(named: "box")!)
                     balance = 100
                     UserDefaults.standard.set(balance, forKey: "balance")
-                    FirebaseManager.shared.saveGold(gold: balance)
+                     FirebaseManager.shared.saveGold(gold: balance)
                 }
                 print(numBalls)
                 if numBalls < 3{

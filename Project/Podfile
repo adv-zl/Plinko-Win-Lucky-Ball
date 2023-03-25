@@ -1,11 +1,12 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '14.0'
+# platform :ios, '14.0'
 
-target 'PinkoWin iOS' do
+target 'PinkoWinNew' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for PinkoWin iOS
+  # Pods for PinkoWinNew
+
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
@@ -16,11 +17,4 @@ target 'PinkoWin iOS' do
   pod 'Capacitor'
   pod 'IonicPortals', '~> 0.6.0'
   pod "CapacitorCamera"
-
-end
-
-target 'OneSignalNotificationServiceExtension' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-  pod 'OneSignalXCFramework', '>= 3.0.0', '< 4.0'
 end
