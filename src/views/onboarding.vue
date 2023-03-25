@@ -7,21 +7,21 @@
         <img src="../../resources/onboarding1.png">
         <h1>Start</h1>
         <p>
-          Get a bonus gift when you first enter the game
+          Choose from 1 to 3 boxes into which balls will fall and you will receive gold for this
         </p>
       </ion-slide>
       <ion-slide>
         <img src="../../resources/onboarding2.png">
         <h1>Profile</h1>
         <p>
-          Customize your profile to stand out in the rankings.
+          Get more gold to buy new skins and the game will become even brighter.
         </p>
       </ion-slide>
       <ion-slide>
         <img src="../../resources/onboarding3.png">
         <h1>Rating</h1>
         <p>
-          Play and collect the most points to take the first position in the ranking.
+          Earn as much gold as possible to be the first in the leaderboard.
         </p>
       </ion-slide>
     </ion-slides>
