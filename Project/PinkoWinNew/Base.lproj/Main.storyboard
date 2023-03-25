@@ -98,6 +98,7 @@
                                         </state>
                                         <connections>
                                             <action selector="menuButtonClicked:" destination="qvm-Jw-Phu" eventType="touchUpInside" id="d4S-cE-jXF"/>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="AIH-E1-9ji"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0l-K0-W4b">
@@ -114,6 +115,7 @@
                                         </state>
                                         <connections>
                                             <action selector="menuButtonClicked:" destination="qvm-Jw-Phu" eventType="touchUpInside" id="U2b-mc-Odn"/>
+                                            <segue destination="3Yl-Kf-DQ8" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qAM-kU-pI9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK9-Yo-wdG">
@@ -130,6 +132,7 @@
                                         </state>
                                         <connections>
                                             <action selector="menuButtonClicked:" destination="qvm-Jw-Phu" eventType="touchUpInside" id="zcg-lU-J7t"/>
+                                            <segue destination="o2C-77-6ht" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="xKD-XG-ZZF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-yh-WMA">
@@ -146,6 +149,7 @@
                                         </state>
                                         <connections>
                                             <action selector="menuButtonClicked:" destination="qvm-Jw-Phu" eventType="touchUpInside" id="NkA-Zp-7bR"/>
+                                            <segue destination="J94-wb-FA5" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="g1s-aY-gId"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZH-BD-Afh">
@@ -162,6 +166,7 @@
                                         </state>
                                         <connections>
                                             <action selector="menuButtonClicked:" destination="qvm-Jw-Phu" eventType="touchUpInside" id="Raz-1M-GAh"/>
+                                            <segue destination="dFT-Bc-gjx" kind="presentation" identifier="settingsVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6Vl-2X-WYn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -204,11 +209,6 @@
                         <outletCollection property="menuButttons" destination="bK9-Yo-wdG" collectionClass="NSMutableArray" id="IZT-dN-ujW"/>
                         <outletCollection property="menuButttons" destination="Wag-yh-WMA" collectionClass="NSMutableArray" id="o4b-H4-Kvt"/>
                         <outletCollection property="menuButttons" destination="GZH-BD-Afh" collectionClass="NSMutableArray" id="xPb-MC-w1K"/>
-                        <segue destination="BV1-FR-VrT" kind="presentation" identifier="gameVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8ON-tl-Nl9"/>
-                        <segue destination="3Yl-Kf-DQ8" kind="presentation" identifier="levelVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ew1-ps-ycO"/>
-                        <segue destination="o2C-77-6ht" kind="presentation" identifier="ratingVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="7AY-0J-zXn"/>
-                        <segue destination="J94-wb-FA5" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="dXp-cO-2tF"/>
-                        <segue destination="dFT-Bc-gjx" kind="presentation" identifier="settingsVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HWy-TO-Pd6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qh0-DR-iau" sceneMemberID="firstResponder"/>
@@ -1137,7 +1137,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="MZJ-ig-1du"/>
-        <segue reference="8ON-tl-Nl9"/>
+        <segue reference="AIH-E1-9ji"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LOGO" width="740" height="450"/>
