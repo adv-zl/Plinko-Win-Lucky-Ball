@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         OneSignal.initWithLaunchOptions(launchOptions)
-        OneSignal.setAppId("488ef2a9-7fbc-4dff-999c-0daa22f76ae8")
+        OneSignal.setAppId("eb6b528e-9a45-4e15-b785-fb4082f27489")
         
         
         self.requestIDFA {
