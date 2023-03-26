@@ -544,6 +544,7 @@
 				INFOPLIST_FILE = PinkoWinNew/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Plinko used Photo Library for photo";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Plinko used Camera for photo";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We need access for analytics and to improve the user experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -576,6 +577,7 @@
 				INFOPLIST_FILE = PinkoWinNew/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Plinko used Photo Library for photo";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Plinko used Camera for photo";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We need access for analytics and to improve the user experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

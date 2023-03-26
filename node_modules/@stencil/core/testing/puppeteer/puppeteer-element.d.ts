@@ -1,8 +1,8 @@
 import type { EventInitDict } from '@stencil/core/internal';
-import type * as pd from './puppeteer-declarations';
-import type * as puppeteer from 'puppeteer';
-import { EventSpy } from './puppeteer-events';
 import { MockHTMLElement } from '@stencil/core/mock-doc';
+import type * as puppeteer from 'puppeteer';
+import type * as pd from './puppeteer-declarations';
+import { EventSpy } from './puppeteer-events';
 export declare class E2EElement extends MockHTMLElement implements pd.E2EElementInternal {
     private _page;
     private _elmHandle;

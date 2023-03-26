@@ -82,7 +82,7 @@ var IonicDeployImpl = /** @class */ (function () {
         this._fileManager = new FileManager();
         this.SNAPSHOT_CACHE = 'ionic_built_snapshots';
         this.MANIFEST_FILE = 'pro-manifest.json';
-        this.PLUGIN_VERSION = '5.5.2';
+        this.PLUGIN_VERSION = '5.5.3';
         this.appInfo = appInfo;
         this._savedPreferences = preferences;
     }

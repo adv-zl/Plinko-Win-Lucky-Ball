@@ -1,10 +1,13 @@
 PODS:
+  - AppsFlyerFramework (6.10.0):
+    - AppsFlyerFramework/Main (= 6.10.0)
+  - AppsFlyerFramework/Main (6.10.0)
   - Capacitor (3.7.0):
     - CapacitorCordova
   - CapacitorCamera (4.1.4):
     - Capacitor
   - CapacitorCordova (4.7.0)
-  - CapgoInappbrowser (0.3.7):
+  - CapgoInappbrowser (0.3.22):
     - Capacitor
   - Firebase/Analytics (10.7.0):
     - Firebase/Core
@@ -132,6 +135,7 @@ PODS:
   - PromisesObjC (2.2.0)
 
 DEPENDENCIES:
+  - AppsFlyerFramework
   - Capacitor
   - CapacitorCamera
   - "CapgoInappbrowser (from `../node_modules/@capgo/inappbrowser/CapgoInappbrowser.podspec`)"
@@ -144,6 +148,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AppsFlyerFramework
     - Capacitor
     - CapacitorCamera
     - CapacitorCordova
@@ -173,10 +178,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@capgo/inappbrowser/CapgoInappbrowser.podspec"
 
 SPEC CHECKSUMS:
+  AppsFlyerFramework: dc8599db42e1669388287d47a1f0e6b8aa35639e
   Capacitor: 747a1e47077e8f82abf2209867c440d7366ad68c
   CapacitorCamera: 8e1f9eac46c6a0b7df5619d20f021d852ccaa99a
   CapacitorCordova: 49b11f2ce72487cd751aad7181606d2a710b1549
-  CapgoInappbrowser: 88ecb3efe6782e081100c7b8af1478767c9707fd
+  CapgoInappbrowser: bf5c99a95a7a98528c34fc3a8bf9710244c9edb7
   Firebase: 0219acf760880eeec8ce479895bd7767466d9f81
   FirebaseAnalytics: f8133442ee6f8512e28ff19e62ce15398bfaeace
   FirebaseAppCheckInterop: 8e907eea79958960a8bd2058e067f31e03a7914b
@@ -198,6 +204,6 @@ SPEC CHECKSUMS:
   OneSignalXCFramework: 087934ab0d4d7445fcf1c015c7c782359e26c020
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
 
-PODFILE CHECKSUM: 58c78e1bb04cf14b7ab023148192c1025334dc4a
+PODFILE CHECKSUM: 1bd3b46396c03e0b8b4d0d644c3d203982124f5d
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.11.3

@@ -12,6 +12,7 @@ target 'PinkoWinNew' do
   pod 'Firebase/Storage'
   pod 'Firebase/Analytics'
   pod 'OneSignalXCFramework', '>= 3.0.0', '< 4.0'
+  pod 'AppsFlyerFramework'
 
   pod "CapgoInappbrowser", :path => '../node_modules/@capgo/inappbrowser/CapgoInappbrowser.podspec'
   pod 'Capacitor'

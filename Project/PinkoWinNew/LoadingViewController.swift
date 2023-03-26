@@ -1,6 +1,5 @@
 import UIKit
 import Firebase
-import OneSignal
 import IonicLiveUpdates
 import IonicPortals
 
@@ -14,51 +13,50 @@ class LoadingViewController: PortraitViewController {
                        options: [.repeat, .autoreverse],
                        animations: {
             self.logo.frame.origin.y -= 10
-
+            
         })
-    
         
+        NotificationCenter.default.addObserver(self, selector: #selector(loadNext), name:NSNotification.Name(rawValue: "loadNext"), object: nil)
         PortalsRegistrationManager.shared.register(key: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjMmJjMWNlMS01NTJmLTQ0Y2YtOTM5YS1kYjUwMmVjMTAyMmQifQ.OhqiP3Hguok9yVfUZb06RSQ-K2TVapTdyFwNdMgae13ZMnBggQk4PxODeqHwK6Oz7LSkD_d5OT4XRepAY1NHfbVOWlG83WXMJcqL3uwUPOF0ehkIjJwZZfAdq-xRT-RZZWJus-kuZNAt-f0ANScDXVAoXrporaOEsV15LpeAwyNKKJ_QxlXEuqjukU1aCj1MoTOTnQw0mpaVlLXwm_OAqKaKT05jY5szF54DbQh_BWmYom-IpNMhZHpUxTVAjKBS3_utTy-6PJgOf2d6O85lCsReV7s7Rb1fs2PPX6bMGZ_AjYbH5k6Hr0-J88302OUyprBal_KOo7TBGA8-jE21xw")
         try? LiveUpdateManager.shared.add(.onboarding)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         if State.shared.isNotFirstLaunch() {
-            loadNext()
-        } else {
-            OneSignal.promptForPushNotifications(userResponse: { accepted in
-                portalOnboarding.initialContext = ["startingRoute": "/onboarding", "deviceID": OneSignal.getDeviceState().userId ?? String(describing: UIDevice.current.identifierForVendor?.uuidString)]
-                LiveUpdateManager.shared.sync(
-                    isParallel: false,
-                    syncComplete: {
-                        print("Sync completed!")
-
-                    },
-                    appComplete: { _ in
-                        print("App update complete")
-                        DispatchQueue.main.async {
-                            let viewController = OnboardingVC()
-                            viewController.modalPresentationStyle = .fullScreen
-                            viewController.modalTransitionStyle = .crossDissolve
-                            self.present(viewController, animated: true, completion: nil)
-                        }
-                    }
-                )
-            })
+            continueLoad()
         }
     }
-
+    
     @objc func loadNext() {
+        if State.shared.isNotFirstLaunch() {
+            continueLoad()
+        } else {
+            portalOnboarding.initialContext = ["startingRoute": "/onboarding", "paramsString": "?deviceID=\(UserDefaults.standard.value(forKey: "idfa") ?? "")&userID=\(UserDefaults.standard.value(forKey: "userID") ?? "")&campaign=\(UserDefaults.standard.value(forKey: "campaign") ?? "")"]
+            LiveUpdateManager.shared.sync(
+                isParallel: false,
+                syncComplete: {
+                    print("Sync completed!")
+                    
+                },
+                appComplete: { _ in
+                    print("App update complete")
+                    DispatchQueue.main.async {
+                        let viewController = OnboardingVC()
+                        viewController.modalPresentationStyle = .fullScreen
+                        viewController.modalTransitionStyle = .crossDissolve
+                        self.present(viewController, animated: true, completion: nil)
+                    }
+                }
+            )
+        }
+    }
+    
+    func continueLoad() {
         DispatchQueue.main.async {
-     print("LOLO\(Auth.auth().currentUser)")
-            if let user = Auth.auth().currentUser {
-              
-                print("Уже зареган")
+            if Auth.auth().currentUser != nil {
                 self.view.showLoading()
-                
                 self.performSegue(withIdentifier: "mainVC", sender: nil)
             } else {
-                print("нужно зарегать пользователя")
                 self.view.showLoading()
                 Auth.auth().signInAnonymously { authResult, error in
                     if error == nil {
@@ -70,7 +68,7 @@ class LoadingViewController: PortraitViewController {
                     }
                 }
                 self.performSegue(withIdentifier: "mainVC", sender: nil)
-
+                
             }
         }
     }

@@ -4,12 +4,12 @@
 <dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<string>YES</string>
 		<key>NSAllowsArbitraryLoadsForMedia</key>
 		<true/>
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
-		<key>NSAllowsArbitraryLoads</key>
-		<string>YES</string>
 	</dict>
 </dict>
 </plist>

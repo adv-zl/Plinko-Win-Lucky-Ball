@@ -25,8 +25,8 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const initialContext = getInitialContext<{ startingRoute: string, deviceID: string }>()
-  ?.value ?? { startingRoute: '/', deviceID: '' };
+const initialContext = getInitialContext<{ startingRoute: string, paramsString: string }>()
+  ?.value ?? { startingRoute: '/', paramsString: '' };
 
 const app = createApp(App)
   .use(IonicVue)
