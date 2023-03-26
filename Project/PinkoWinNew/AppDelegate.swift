@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.application = application
         
         AppsFlyerLib.shared().appsFlyerDevKey = "8aLpiU4bwb6veyvUduxrfN"
-        AppsFlyerLib.shared().appleAppID = "6446378252"
+        AppsFlyerLib.shared().appleAppID = "6446814935"
         AppsFlyerLib.shared().delegate = self
         
         FirebaseApp.configure()
