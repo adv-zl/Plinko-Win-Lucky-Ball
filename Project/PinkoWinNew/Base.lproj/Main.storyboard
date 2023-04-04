@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TaW-ff-RUP">
-                                <rect key="frame" x="90" y="318" width="248" height="350"/>
+                                <rect key="frame" x="90" y="348" width="248" height="290"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ7-e3-Dlf">
                                         <rect key="frame" x="0.0" y="0.0" width="248" height="50"/>
@@ -154,25 +154,8 @@
                                             <segue destination="J94-wb-FA5" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="g1s-aY-gId"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km8-kQ-lkv">
-                                        <rect key="frame" x="0.0" y="240" width="248" height="50"/>
-                                        <color key="backgroundColor" red="0.91778600215911865" green="0.55625247955322266" blue="0.25030982494354248" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="teU-Nm-w1T">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
-                                        <state key="normal" title="BONUS WHELL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="menuButtonClicked:" destination="qvm-Jw-Phu" eventType="touchUpInside" id="NGe-tg-7a1"/>
-                                            <segue destination="v6u-XY-nbs" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="mgC-A9-lu1"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZH-BD-Afh">
-                                        <rect key="frame" x="0.0" y="300" width="248" height="50"/>
+                                        <rect key="frame" x="0.0" y="240" width="248" height="50"/>
                                         <color key="backgroundColor" red="0.60724818709999995" green="0.40153941510000002" blue="0.96475404499999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="XBe-jX-Tlo">
@@ -228,7 +211,6 @@
                         <outletCollection property="menuButttons" destination="bK9-Yo-wdG" collectionClass="NSMutableArray" id="IZT-dN-ujW"/>
                         <outletCollection property="menuButttons" destination="Wag-yh-WMA" collectionClass="NSMutableArray" id="o4b-H4-Kvt"/>
                         <outletCollection property="menuButttons" destination="GZH-BD-Afh" collectionClass="NSMutableArray" id="xPb-MC-w1K"/>
-                        <outletCollection property="menuButttons" destination="Km8-kQ-lkv" collectionClass="NSMutableArray" id="df1-gM-r9Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qh0-DR-iau" sceneMemberID="firstResponder"/>
@@ -1214,7 +1196,7 @@
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-UW-PEd">
-                                <rect key="frame" x="108.33333333333333" y="158" width="211.33333333333343" height="211.66666666666663"/>
+                                <rect key="frame" x="108.33333333333333" y="158" width="211.33333333333337" height="211.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NrB-UW-PEd" secondAttribute="height" multiplier="1:1" id="kyf-7d-Gdf"/>
                                 </constraints>
@@ -1264,7 +1246,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mgC-A9-lu1"/>
         <segue reference="MZJ-ig-1du"/>
         <segue reference="AIH-E1-9ji"/>
     </inferredMetricsTieBreakers>
