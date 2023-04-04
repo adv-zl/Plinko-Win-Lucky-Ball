@@ -39,6 +39,10 @@
 		8880809229CF96C100A36C35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8880809129CF96C100A36C35 /* GoogleService-Info.plist */; };
 		888B48C129D0BB78001C18FF /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B48C029D0BB78001C18FF /* NotificationService.swift */; };
 		888B48C529D0BB78001C18FF /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 888B48BE29D0BB78001C18FF /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		888B494529DAEAFB001C18FF /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B494429DAEAFB001C18FF /* WheelViewController.swift */; };
+		888B495929DB779D001C18FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888B495829DB779D001C18FF /* StoreKit.framework */; };
+		888B495B29DC0353001C18FF /* IAPPoroducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495A29DC0353001C18FF /* IAPPoroducts.swift */; };
+		888B495D29DC03F5001C18FF /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495C29DC03F5001C18FF /* IAPManager.swift */; };
 		ED74BCB30F11E2E505B5C786 /* Pods_PinkoWinNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB808678EE9DE8AC28E60B20 /* Pods_PinkoWinNew.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +110,14 @@
 		888B48C029D0BB78001C18FF /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		888B48C229D0BB78001C18FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		888B48CA29D0BB83001C18FF /* PinkoWinNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinkoWinNew.entitlements; sourceTree = "<group>"; };
+		888B494429DAEAFB001C18FF /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		888B495429DAF0B8001C18FF /* error.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = error.aac; sourceTree = "<group>"; };
+		888B495529DAF0BA001C18FF /* woosh.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = woosh.aac; sourceTree = "<group>"; };
+		888B495629DAF0BB001C18FF /* victory.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = victory.aac; sourceTree = "<group>"; };
+		888B495729DAF0BD001C18FF /* bubble_pop.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubble_pop.aac; sourceTree = "<group>"; };
+		888B495829DB779D001C18FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		888B495A29DC0353001C18FF /* IAPPoroducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPPoroducts.swift; sourceTree = "<group>"; };
+		888B495C29DC03F5001C18FF /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		AF64343FACE8DF7ECED5B792 /* Pods-PinkoWinNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.debug.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.debug.xcconfig"; sourceTree = "<group>"; };
 		FB808678EE9DE8AC28E60B20 /* Pods_PinkoWinNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkoWinNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED74BCB30F11E2E505B5C786 /* Pods_PinkoWinNew.framework in Frameworks */,
+				888B495929DB779D001C18FF /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,12 +171,17 @@
 				8880803F29CF8CF900A36C35 /* AppDelegate.swift */,
 				8880807129CF8E3400A36C35 /* backgroundMusic.mp3 */,
 				8880807029CF8E3400A36C35 /* ball.mp3 */,
+				888B495729DAF0BD001C18FF /* bubble_pop.aac */,
+				888B495429DAF0B8001C18FF /* error.aac */,
+				888B495629DAF0BB001C18FF /* victory.aac */,
+				888B495529DAF0BA001C18FF /* woosh.aac */,
 				8880804929CF8CF900A36C35 /* Main.storyboard */,
 				8880809129CF96C100A36C35 /* GoogleService-Info.plist */,
 				8880804C29CF8CFB00A36C35 /* Assets.xcassets */,
 				8880804E29CF8CFB00A36C35 /* LaunchScreen.storyboard */,
 				8880807429CF915D00A36C35 /* LoadingViewController.swift */,
 				8880807629CF922800A36C35 /* OnboardingVC.swift */,
+				888B494429DAEAFB001C18FF /* WheelViewController.swift */,
 				8880809029CF95B100A36C35 /* Level */,
 				8880808B29CF959D00A36C35 /* Rating */,
 				8880808629CF958400A36C35 /* Shop */,
@@ -205,6 +223,8 @@
 				8880806329CF8DEA00A36C35 /* PortraitViewController.swift */,
 				8880806229CF8DE900A36C35 /* State.swift */,
 				8880806429CF8DEA00A36C35 /* UIView+Extensions.swift */,
+				888B495A29DC0353001C18FF /* IAPPoroducts.swift */,
+				888B495C29DC03F5001C18FF /* IAPManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -283,6 +303,7 @@
 		FF83D34CAE359A5563C19CD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				888B495829DB779D001C18FF /* StoreKit.framework */,
 				FB808678EE9DE8AC28E60B20 /* Pods_PinkoWinNew.framework */,
 				87BBC10F957BF7B0076CEE05 /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
@@ -482,9 +503,12 @@
 			files = (
 				8880808E29CF95AD00A36C35 /* LevelCell.swift in Sources */,
 				8880805829CF8D4D00A36C35 /* GameScene.swift in Sources */,
+				888B495B29DC0353001C18FF /* IAPPoroducts.swift in Sources */,
 				8880807929CF923700A36C35 /* MenuViewController.swift in Sources */,
 				8880808529CF957C00A36C35 /* ShopViewController.swift in Sources */,
 				8880805929CF8D4D00A36C35 /* GameViewController.swift in Sources */,
+				888B495D29DC03F5001C18FF /* IAPManager.swift in Sources */,
+				888B494529DAEAFB001C18FF /* WheelViewController.swift in Sources */,
 				8880808A29CF959700A36C35 /* RatingCell.swift in Sources */,
 				8880806D29CF8E0800A36C35 /* FirebaseManager.swift in Sources */,
 				8880807B29CF942700A36C35 /* User.swift in Sources */,

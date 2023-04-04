@@ -94,6 +94,7 @@ class ShopViewController: PortraitViewController {
             purchasedSkin.append(index)
             ShoppingManager.shared.purchasedSkin(team: index)
             balance -= 1000
+            UserDefaults.standard.set(balance, forKey: "balance")
             
         }else if sender.titleLabel?.text! == "Select" {
             sender.titleLabel?.text = "Selected"

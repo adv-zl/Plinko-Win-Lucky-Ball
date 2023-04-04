@@ -1,6 +1,9 @@
 import UIKit
 import Firebase
+import StoreKit
+
 class SettingsViewController: PortraitViewController {
+    
 
     
 
@@ -15,6 +18,8 @@ class SettingsViewController: PortraitViewController {
     private var selectedAvatar:String!
     private var indexAvatar = 0
     private var sounds:Bool!
+    
+    let iapManager = IAPManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +47,6 @@ class SettingsViewController: PortraitViewController {
         }
         
         if let image = UserDefaults.standard.object(forKey: "avatarPhoto") as? Data {
-            print("image")
             firstAvatar.image = UIImage(data: image)
             firstAvatar.layer.cornerRadius = 50
             
@@ -54,7 +58,11 @@ class SettingsViewController: PortraitViewController {
     
     
    
+    @IBAction func buyGoldButtonClicked(_ sender: UIButton) {
+        iapManager.purchase()
+    }
     
+
     @IBAction func menuButtonCliked(_ sender: UIButton) {
         SoundManager.shared.buttonSound(selector: sounds)
         dismiss(animated: true)
@@ -64,7 +72,6 @@ class SettingsViewController: PortraitViewController {
     @IBAction func soundsButtonClicked(_ sender: UIButton) {
         SoundManager.shared.buttonSound(selector: sounds)
         sounds.toggle()
-        print(sounds)
         if sounds == true{
             sender.setTitle("Sounds: OFF", for: .normal)
            
@@ -86,7 +93,6 @@ class SettingsViewController: PortraitViewController {
                 FirebaseManager.shared.saveName(userName: name)
                 dismiss(animated: true)
             }else{
-                print("коротко")
                 self.showAlert(delegate: self, titleText: "Error", subTitle: "Name must be more than 4 characters and less than 16", image: UIImage(named: "exit")!)
             }
             

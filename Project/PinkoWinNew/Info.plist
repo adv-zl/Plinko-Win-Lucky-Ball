@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>To buy gold in the game</string>
+    <key>com.apple.developer.in-app-payments</key>
+    <string>enable</string>
+    <key>SKPaymentTransactionObserverProtocol</key>
+    <true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

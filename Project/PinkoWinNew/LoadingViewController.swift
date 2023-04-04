@@ -55,7 +55,21 @@ class LoadingViewController: PortraitViewController {
         DispatchQueue.main.async {
             if Auth.auth().currentUser != nil {
                 self.view.showLoading()
-                self.performSegue(withIdentifier: "mainVC", sender: nil)
+                let userDefaults = UserDefaults.standard
+                        let lastLaunchDate = userDefaults.object(forKey: "lastLaunchDate") as? Date
+                        
+                        if let lastLaunchDate = lastLaunchDate, Calendar.current.isDateInToday(lastLaunchDate) {
+                            // User has launched the app today, go to mainVC
+                            self.view.showLoading()
+                            self.performSegue(withIdentifier: "mainVC", sender: nil)
+                        } else {
+                            // User is launching the app for the first time today or after a day has passed, go to bonusVC
+                            userDefaults.set(Date(), forKey: "lastLaunchDate")
+                            self.view.showLoading()
+                            self.performSegue(withIdentifier: "whellVC", sender: nil)
+                        }
+                    
+               // self.performSegue(withIdentifier: "mainVC", sender: nil)
             } else {
                 self.view.showLoading()
                 Auth.auth().signInAnonymously { authResult, error in
@@ -67,7 +81,7 @@ class LoadingViewController: PortraitViewController {
                         self.view.hideLoading()
                     }
                 }
-                self.performSegue(withIdentifier: "mainVC", sender: nil)
+                self.performSegue(withIdentifier: "whellVC", sender: nil)
                 
             }
         }

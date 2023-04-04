@@ -162,7 +162,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(bottomButton)
         
         currentLevel = UserDefaults.standard.value(forKey: "selectedLvl") as? Int ?? 1
-        print(currentLevel)
         createObstacles()
         
         createSquares()
@@ -325,12 +324,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         for touch in touches {
             let location = touch.location(in: self)
             if menuButton.contains(location) {
-                print("меню")
                 SoundManager.shared.backgroundGameSound(selector: false)
                 SoundManager.shared.buttonSound(selector: sounds)
                 viewController?.performSegue(withIdentifier: "mainVC", sender: nil)
             }
-            print(location.x)
             if let touchedNode = nodes(at: location).first as? SKSpriteNode, touchedNode.name == "box" {
                 if selectedSquares.contains(touchedNode) {
                     selectedSquares.remove(touchedNode)
@@ -342,13 +339,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             } else if gameArea.contains(location) && !selectedSquares.isEmpty {
                 
                 if balance <= 0 {
-                    print("babla ytn")
                     viewController?.showAlert(delegate: viewController as! AlertDelegate, titleText: "GIFT BOX", subTitle: "Get 100 gold as a gift", image: UIImage(named: "box")!)
                     balance = 100
                     UserDefaults.standard.set(balance, forKey: "balance")
                      FirebaseManager.shared.saveGold(gold: balance)
                 }
-                print(numBalls)
                 if numBalls < 3{
                     balance -= throwCost
                     UserDefaults.standard.set(balance, forKey: "balance")
@@ -394,15 +389,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 SKAction.scale(by: 1 / 1.2, duration: 0.1)
             ])
             if selectedSquares.contains(square as! SKSpriteNode) {
-                print(selectedSquares.count)
                 balance += 60 / selectedSquares.count
                 updateScoreLabel()
                 colorLabel.text = "+\(60 / selectedSquares.count)"
             }
             square.run(pulse)
             bottomButton.run(pulse)
-           
-           // colorLabel.text = "+\(60 / selectedSquares.count)"
             colorLabel.position = CGPoint(x: frame.midX, y: frame.midY)
             colorLabel.zPosition = 3
             addChild(colorLabel)
