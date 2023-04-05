@@ -146,6 +146,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88669C6629DDDE6500A03771 /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				888B494429DAEAFB001C18FF /* WheelViewController.swift */,
+			);
+			path = Wheel;
+			sourceTree = "<group>";
+		};
+		88669C6729DDDE7700A03771 /* BuyGold */ = {
+			isa = PBXGroup;
+			children = (
+				88669C6529DDDC5300A03771 /* Products.storekit */,
+				888B495F29DD8917001C18FF /* BuyGoldViewController.swift */,
+			);
+			path = BuyGold;
+			sourceTree = "<group>";
+		};
 		8880803329CF8CF900A36C35 = {
 			isa = PBXGroup;
 			children = (
@@ -184,9 +201,8 @@
 				8880804E29CF8CFB00A36C35 /* LaunchScreen.storyboard */,
 				8880807429CF915D00A36C35 /* LoadingViewController.swift */,
 				8880807629CF922800A36C35 /* OnboardingVC.swift */,
-				888B494429DAEAFB001C18FF /* WheelViewController.swift */,
-				88669C6529DDDC5300A03771 /* Products.storekit */,
-				888B495F29DD8917001C18FF /* BuyGoldViewController.swift */,
+				88669C6629DDDE6500A03771 /* Wheel */,
+				88669C6729DDDE7700A03771 /* BuyGold */,
 				8880809029CF95B100A36C35 /* Level */,
 				8880808B29CF959D00A36C35 /* Rating */,
 				8880808629CF958400A36C35 /* Shop */,

@@ -4,9 +4,6 @@ import StoreKit
 
 class SettingsViewController: PortraitViewController {
     
-
-    
-
     @IBOutlet weak var nameTextField: UITextField!
 
     @IBOutlet var settinsButton: [UIButton]!
@@ -19,7 +16,6 @@ class SettingsViewController: PortraitViewController {
     private var indexAvatar = 0
     private var sounds:Bool!
     
-    let iapManager = IAPManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +45,7 @@ class SettingsViewController: PortraitViewController {
         if let image = UserDefaults.standard.object(forKey: "avatarPhoto") as? Data {
             firstAvatar.image = UIImage(data: image)
             firstAvatar.layer.cornerRadius = 50
-            
+
         }
     }
     @objc func dismissKeyboard() {
@@ -59,12 +55,12 @@ class SettingsViewController: PortraitViewController {
     
    
     @IBAction func buyGoldButtonClicked(_ sender: UIButton) {
-        //iapManager.purchase()
+       
     }
     
 
     @IBAction func menuButtonCliked(_ sender: UIButton) {
-        //SoundManager.shared.buttonSound(selector: sounds)
+        SoundManager.shared.buttonSound(selector: sounds)
         dismiss(animated: true)
     }
     

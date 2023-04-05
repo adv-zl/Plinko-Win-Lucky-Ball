@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BuyGoldViewController: UIViewController {
+class BuyGoldViewController: PortraitViewController {
     @IBOutlet weak var buyButton: UIButton!
     let iapManager = IAPManager.shared
     override func viewDidLoad() {
