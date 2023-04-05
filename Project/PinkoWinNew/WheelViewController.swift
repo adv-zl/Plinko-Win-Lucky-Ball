@@ -73,6 +73,7 @@ class WheelViewController: PortraitViewController {
         }
         balance += bonusCoin
         UserDefaults.standard.set(balance, forKey: "balance")
+        FirebaseManager.shared.saveGold(gold: balance)
         UIView.animate(withDuration: 2, delay:0, options:[.curveLinear],  animations: {
             
             for _ in 0..<10{

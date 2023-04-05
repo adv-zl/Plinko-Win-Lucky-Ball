@@ -60,13 +60,14 @@ class LoadingViewController: PortraitViewController {
                         
                         if let lastLaunchDate = lastLaunchDate, Calendar.current.isDateInToday(lastLaunchDate) {
                             // User has launched the app today, go to mainVC
-                            self.view.showLoading()
+                         
                             self.performSegue(withIdentifier: "mainVC", sender: nil)
                         } else {
                             // User is launching the app for the first time today or after a day has passed, go to bonusVC
                             userDefaults.set(Date(), forKey: "lastLaunchDate")
-                            self.view.showLoading()
+                         
                             self.performSegue(withIdentifier: "whellVC", sender: nil)
+                            
                         }
                     
                // self.performSegue(withIdentifier: "mainVC", sender: nil)

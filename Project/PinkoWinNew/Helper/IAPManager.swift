@@ -8,6 +8,7 @@ class IAPManager: NSObject {
     private override init(){}
     var products: [SKProduct] = []
     let paymentQueue = SKPaymentQueue.default()
+    
     public func setupPurchases(callback: @escaping(Bool) -> ()){
         if SKPaymentQueue.canMakePayments() {
             paymentQueue.add(self)
@@ -18,7 +19,7 @@ class IAPManager: NSObject {
     }
     
     public func getProducts(){
-        let identifiers: Set = [IAPProducts.consumable.rawValue]
+        let identifiers: Set<String> = [IAPProducts.consumable.rawValue]
         let productRequest = SKProductsRequest(productIdentifiers: identifiers)
         productRequest.delegate = self
         productRequest.start()
@@ -42,19 +43,39 @@ extension IAPManager: SKPaymentTransactionObserver{
             switch transaction.transactionState{
                 
             case .purchasing:
+                print("purchasing")
                 break
             case .purchased:
                 print("purchased")
+                complated(transaction: transaction)
             case .failed:
                 print("failed")
+                fail(transaction: transaction)
             case .restored:
                 print("restored")
+                break
             case .deferred:
+                print("deferred")
                 break
             @unknown default:
                 break
             }
         }
+    }
+    
+    private func fail(transaction: SKPaymentTransaction){
+        print(transaction.error)
+        paymentQueue.finishTransaction(transaction)
+    }
+    private func complated(transaction: SKPaymentTransaction){
+        paymentQueue.finishTransaction(transaction)
+        var balance = 0
+        if UserDefaults.standard.value(forKey: "balance") != nil{
+            balance = UserDefaults.standard.integer(forKey: "balance")
+        }
+        balance += 1000
+        FirebaseManager.shared.saveGold(gold: balance)
+        UserDefaults.standard.set(balance, forKey: "balance")
     }
 }
 

@@ -59,12 +59,12 @@ class SettingsViewController: PortraitViewController {
     
    
     @IBAction func buyGoldButtonClicked(_ sender: UIButton) {
-        iapManager.purchase()
+        //iapManager.purchase()
     }
     
 
     @IBAction func menuButtonCliked(_ sender: UIButton) {
-        SoundManager.shared.buttonSound(selector: sounds)
+        //SoundManager.shared.buttonSound(selector: sounds)
         dismiss(animated: true)
     }
     

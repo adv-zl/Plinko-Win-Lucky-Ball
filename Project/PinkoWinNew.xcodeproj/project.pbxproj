@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54FFB0ADA7FB779F6CA3B7F4 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BBC10F957BF7B0076CEE05 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		2C1AAA837E9A3A242303A585 /* Pods_PinkoWinNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739F4F1310A507719BD14D0C /* Pods_PinkoWinNew.framework */; };
+		31F17A94311DAEF3E28A3707 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F869797C97EA0B81DE413F8C /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		8880804029CF8CF900A36C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880803F29CF8CF900A36C35 /* AppDelegate.swift */; };
 		8880804B29CF8CF900A36C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8880804929CF8CF900A36C35 /* Main.storyboard */; };
 		8880804D29CF8CFB00A36C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8880804C29CF8CFB00A36C35 /* Assets.xcassets */; };
@@ -43,7 +44,7 @@
 		888B495929DB779D001C18FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888B495829DB779D001C18FF /* StoreKit.framework */; };
 		888B495B29DC0353001C18FF /* IAPPoroducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495A29DC0353001C18FF /* IAPPoroducts.swift */; };
 		888B495D29DC03F5001C18FF /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495C29DC03F5001C18FF /* IAPManager.swift */; };
-		ED74BCB30F11E2E505B5C786 /* Pods_PinkoWinNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB808678EE9DE8AC28E60B20 /* Pods_PinkoWinNew.framework */; };
+		888B496029DD8917001C18FF /* BuyGoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495F29DD8917001C18FF /* BuyGoldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,10 +72,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		67BC323D481DF3149607F07B /* Pods-PinkoWinNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.release.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.release.xcconfig"; sourceTree = "<group>"; };
-		7C39CF238DD2888B19AA7C82 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		80F519A26BA730449231E63D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		87BBC10F957BF7B0076CEE05 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D47AAC52AD0E5EAC7A2FFB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5B8B065F768A5BECA3EB31F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		739F4F1310A507719BD14D0C /* Pods_PinkoWinNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkoWinNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83438432696938B388F020BE /* Pods-PinkoWinNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.release.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.release.xcconfig"; sourceTree = "<group>"; };
+		88669C6529DDDC5300A03771 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
 		8880803C29CF8CF900A36C35 /* PinkoWinNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkoWinNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8880803F29CF8CF900A36C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8880804A29CF8CF900A36C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,8 +120,9 @@
 		888B495829DB779D001C18FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		888B495A29DC0353001C18FF /* IAPPoroducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPPoroducts.swift; sourceTree = "<group>"; };
 		888B495C29DC03F5001C18FF /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
-		AF64343FACE8DF7ECED5B792 /* Pods-PinkoWinNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.debug.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.debug.xcconfig"; sourceTree = "<group>"; };
-		FB808678EE9DE8AC28E60B20 /* Pods_PinkoWinNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkoWinNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		888B495F29DD8917001C18FF /* BuyGoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyGoldViewController.swift; sourceTree = "<group>"; };
+		8CF8394DE843E3FB88A12F92 /* Pods-PinkoWinNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.debug.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.debug.xcconfig"; sourceTree = "<group>"; };
+		F869797C97EA0B81DE413F8C /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED74BCB30F11E2E505B5C786 /* Pods_PinkoWinNew.framework in Frameworks */,
 				888B495929DB779D001C18FF /* StoreKit.framework in Frameworks */,
+				2C1AAA837E9A3A242303A585 /* Pods_PinkoWinNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FFB0ADA7FB779F6CA3B7F4 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+				31F17A94311DAEF3E28A3707 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +185,8 @@
 				8880807429CF915D00A36C35 /* LoadingViewController.swift */,
 				8880807629CF922800A36C35 /* OnboardingVC.swift */,
 				888B494429DAEAFB001C18FF /* WheelViewController.swift */,
+				88669C6529DDDC5300A03771 /* Products.storekit */,
+				888B495F29DD8917001C18FF /* BuyGoldViewController.swift */,
 				8880809029CF95B100A36C35 /* Level */,
 				8880808B29CF959D00A36C35 /* Rating */,
 				8880808629CF958400A36C35 /* Shop */,
@@ -292,10 +297,10 @@
 		D0FE75EB7C284A84D9F8EC97 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF64343FACE8DF7ECED5B792 /* Pods-PinkoWinNew.debug.xcconfig */,
-				67BC323D481DF3149607F07B /* Pods-PinkoWinNew.release.xcconfig */,
-				7C39CF238DD2888B19AA7C82 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				80F519A26BA730449231E63D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				5B8B065F768A5BECA3EB31F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				53D47AAC52AD0E5EAC7A2FFB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				8CF8394DE843E3FB88A12F92 /* Pods-PinkoWinNew.debug.xcconfig */,
+				83438432696938B388F020BE /* Pods-PinkoWinNew.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -304,8 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				888B495829DB779D001C18FF /* StoreKit.framework */,
-				FB808678EE9DE8AC28E60B20 /* Pods_PinkoWinNew.framework */,
-				87BBC10F957BF7B0076CEE05 /* Pods_OneSignalNotificationServiceExtension.framework */,
+				F869797C97EA0B81DE413F8C /* Pods_OneSignalNotificationServiceExtension.framework */,
+				739F4F1310A507719BD14D0C /* Pods_PinkoWinNew.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,13 +322,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8880805329CF8CFB00A36C35 /* Build configuration list for PBXNativeTarget "PinkoWinNew" */;
 			buildPhases = (
-				B75C7205301D1EDF4B0171E3 /* [CP] Check Pods Manifest.lock */,
+				2E6ACD5685A170C28DDEF572 /* [CP] Check Pods Manifest.lock */,
 				8880803829CF8CF900A36C35 /* Sources */,
 				8880803929CF8CF900A36C35 /* Frameworks */,
 				8880803A29CF8CF900A36C35 /* Resources */,
 				8880809429CF986300A36C35 /* Copy Web App */,
-				04C6E1B0684D652A68D4D669 /* [CP] Embed Pods Frameworks */,
 				888B48C929D0BB78001C18FF /* Embed Foundation Extensions */,
+				59EC4933AE6F8928E7D30B63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,7 +344,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 888B48C629D0BB78001C18FF /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				8B0C7A3497203FEFE878E4CA /* [CP] Check Pods Manifest.lock */,
+				33F0F1FDB8061B56ED028256 /* [CP] Check Pods Manifest.lock */,
 				888B48BA29D0BB78001C18FF /* Sources */,
 				888B48BB29D0BB78001C18FF /* Frameworks */,
 				888B48BC29D0BB78001C18FF /* Resources */,
@@ -372,7 +377,7 @@
 				};
 			};
 			buildConfigurationList = 8880803729CF8CF900A36C35 /* Build configuration list for PBXProject "PinkoWinNew" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -415,7 +420,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04C6E1B0684D652A68D4D669 /* [CP] Embed Pods Frameworks */ = {
+		2E6ACD5685A170C28DDEF572 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinkoWinNew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33F0F1FDB8061B56ED028256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59EC4933AE6F8928E7D30B63 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,50 +499,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_NAME=\"onboarding\"\nEMBEDDED_DIR=\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.app/portals\"\nEMBEDDED_APP=\"${SRCROOT}/../dist\"\nZIP_FILE=\"${APP_NAME}.zip\"\n\nmkdir \"${EMBEDDED_DIR}\"\n\nif [ -d \"${EMBEDDED_DIR}/${APP_NAME}\" ]\nthen\n    cd \"${EMBEDDED_DIR}\"\n    rm -r \"${APP_NAME}\"\nfi\n\nmkdir \"${EMBEDDED_DIR}/${APP_NAME}\"\n\nif [ -d \"${EMBEDDED_APP}\" ] \nthen\n    cd \"${EMBEDDED_APP}\"\n    zip -vr \"${ZIP_FILE}\" * -x \"*.DS_Store\"\n    unzip \"${ZIP_FILE}\" -d \"${EMBEDDED_DIR}/${APP_NAME}\"\n    rm \"${ZIP_FILE}\"\nelse\n    echo \"App ${APP_NAME} has not been built!\"\n    exit 999\nfi\n";
 		};
-		8B0C7A3497203FEFE878E4CA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B75C7205301D1EDF4B0171E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PinkoWinNew-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -522,6 +527,7 @@
 				8880806729CF8DEA00A36C35 /* State.swift in Sources */,
 				8880808229CF955F00A36C35 /* SettingsViewController.swift in Sources */,
 				8880806629CF8DEA00A36C35 /* Constants.swift in Sources */,
+				888B496029DD8917001C18FF /* BuyGoldViewController.swift in Sources */,
 				8880808929CF959700A36C35 /* RatingViewController.swift in Sources */,
 				8880807529CF915D00A36C35 /* LoadingViewController.swift in Sources */,
 				8880806E29CF8E0800A36C35 /* ShoppingManager.swift in Sources */,
@@ -617,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -671,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -683,7 +689,7 @@
 		};
 		8880805429CF8CFB00A36C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF64343FACE8DF7ECED5B792 /* Pods-PinkoWinNew.debug.xcconfig */;
+			baseConfigurationReference = 8CF8394DE843E3FB88A12F92 /* Pods-PinkoWinNew.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -705,11 +711,12 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkoWinNew2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -722,7 +729,7 @@
 		};
 		8880805529CF8CFB00A36C35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67BC323D481DF3149607F07B /* Pods-PinkoWinNew.release.xcconfig */;
+			baseConfigurationReference = 83438432696938B388F020BE /* Pods-PinkoWinNew.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -744,11 +751,12 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkoWinNew2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -761,7 +769,7 @@
 		};
 		888B48C729D0BB78001C18FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C39CF238DD2888B19AA7C82 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = 5B8B065F768A5BECA3EB31F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -791,7 +799,7 @@
 		};
 		888B48C829D0BB78001C18FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80F519A26BA730449231E63D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 53D47AAC52AD0E5EAC7A2FFB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
