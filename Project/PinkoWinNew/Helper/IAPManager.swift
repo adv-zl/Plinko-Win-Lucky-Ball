@@ -27,7 +27,6 @@ class IAPManager: NSObject {
     
     public func purchase(){
         guard let product = products.filter({$0.productIdentifier == "com.PinkoWinNew2023.consumable"}).first else {
-            print("non product")
             return
         }
         
@@ -43,19 +42,14 @@ extension IAPManager: SKPaymentTransactionObserver{
             switch transaction.transactionState{
                 
             case .purchasing:
-                print("purchasing")
                 break
             case .purchased:
-                print("purchased")
                 complated(transaction: transaction)
             case .failed:
-                print("failed")
                 fail(transaction: transaction)
             case .restored:
-                print("restored")
                 break
             case .deferred:
-                print("deferred")
                 break
             @unknown default:
                 break
@@ -64,7 +58,6 @@ extension IAPManager: SKPaymentTransactionObserver{
     }
     
     private func fail(transaction: SKPaymentTransaction){
-        print(transaction.error)
         paymentQueue.finishTransaction(transaction)
     }
     private func complated(transaction: SKPaymentTransaction){

@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C1AAA837E9A3A242303A585 /* Pods_PinkoWinNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739F4F1310A507719BD14D0C /* Pods_PinkoWinNew.framework */; };
-		31F17A94311DAEF3E28A3707 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F869797C97EA0B81DE413F8C /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		09CB49F420E33BCAF943910A /* Pods_PinkoWinNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C894A1C4C8035616A7AC9D /* Pods_PinkoWinNew.framework */; };
 		8880804029CF8CF900A36C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880803F29CF8CF900A36C35 /* AppDelegate.swift */; };
 		8880804B29CF8CF900A36C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8880804929CF8CF900A36C35 /* Main.storyboard */; };
 		8880804D29CF8CFB00A36C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8880804C29CF8CFB00A36C35 /* Assets.xcassets */; };
@@ -45,6 +44,7 @@
 		888B495B29DC0353001C18FF /* IAPPoroducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495A29DC0353001C18FF /* IAPPoroducts.swift */; };
 		888B495D29DC03F5001C18FF /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495C29DC03F5001C18FF /* IAPManager.swift */; };
 		888B496029DD8917001C18FF /* BuyGoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B495F29DD8917001C18FF /* BuyGoldViewController.swift */; };
+		AD8BBE035D8DD12BC4234BDA /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FA3B24A41605F70024ABE1 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +72,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		53D47AAC52AD0E5EAC7A2FFB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		5B8B065F768A5BECA3EB31F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		739F4F1310A507719BD14D0C /* Pods_PinkoWinNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkoWinNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83438432696938B388F020BE /* Pods-PinkoWinNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.release.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.release.xcconfig"; sourceTree = "<group>"; };
+		07FA3B24A41605F70024ABE1 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E621F80A668152BD01B3A25 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4B38E56F69CBFC0534320858 /* Pods-PinkoWinNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.debug.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.debug.xcconfig"; sourceTree = "<group>"; };
 		88669C6529DDDC5300A03771 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
 		8880803C29CF8CF900A36C35 /* PinkoWinNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkoWinNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8880803F29CF8CF900A36C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +120,9 @@
 		888B495A29DC0353001C18FF /* IAPPoroducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPPoroducts.swift; sourceTree = "<group>"; };
 		888B495C29DC03F5001C18FF /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		888B495F29DD8917001C18FF /* BuyGoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyGoldViewController.swift; sourceTree = "<group>"; };
-		8CF8394DE843E3FB88A12F92 /* Pods-PinkoWinNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.debug.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.debug.xcconfig"; sourceTree = "<group>"; };
-		F869797C97EA0B81DE413F8C /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C894A1C4C8035616A7AC9D /* Pods_PinkoWinNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkoWinNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC30B65EA472879CA9EC359 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		EE74C10BB526455F546B5B58 /* Pods-PinkoWinNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkoWinNew.release.xcconfig"; path = "Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				888B495929DB779D001C18FF /* StoreKit.framework in Frameworks */,
-				2C1AAA837E9A3A242303A585 /* Pods_PinkoWinNew.framework in Frameworks */,
+				09CB49F420E33BCAF943910A /* Pods_PinkoWinNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F17A94311DAEF3E28A3707 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+				AD8BBE035D8DD12BC4234BDA /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,10 +313,10 @@
 		D0FE75EB7C284A84D9F8EC97 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B8B065F768A5BECA3EB31F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				53D47AAC52AD0E5EAC7A2FFB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
-				8CF8394DE843E3FB88A12F92 /* Pods-PinkoWinNew.debug.xcconfig */,
-				83438432696938B388F020BE /* Pods-PinkoWinNew.release.xcconfig */,
+				BAC30B65EA472879CA9EC359 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				2E621F80A668152BD01B3A25 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				4B38E56F69CBFC0534320858 /* Pods-PinkoWinNew.debug.xcconfig */,
+				EE74C10BB526455F546B5B58 /* Pods-PinkoWinNew.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -325,8 +325,8 @@
 			isa = PBXGroup;
 			children = (
 				888B495829DB779D001C18FF /* StoreKit.framework */,
-				F869797C97EA0B81DE413F8C /* Pods_OneSignalNotificationServiceExtension.framework */,
-				739F4F1310A507719BD14D0C /* Pods_PinkoWinNew.framework */,
+				07FA3B24A41605F70024ABE1 /* Pods_OneSignalNotificationServiceExtension.framework */,
+				A9C894A1C4C8035616A7AC9D /* Pods_PinkoWinNew.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,13 +338,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8880805329CF8CFB00A36C35 /* Build configuration list for PBXNativeTarget "PinkoWinNew" */;
 			buildPhases = (
-				2E6ACD5685A170C28DDEF572 /* [CP] Check Pods Manifest.lock */,
+				684C2008D71DED14D4F96264 /* [CP] Check Pods Manifest.lock */,
 				8880803829CF8CF900A36C35 /* Sources */,
 				8880803929CF8CF900A36C35 /* Frameworks */,
 				8880803A29CF8CF900A36C35 /* Resources */,
 				8880809429CF986300A36C35 /* Copy Web App */,
 				888B48C929D0BB78001C18FF /* Embed Foundation Extensions */,
-				59EC4933AE6F8928E7D30B63 /* [CP] Embed Pods Frameworks */,
+				2130D5864634AAA7981F1176 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,7 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 888B48C629D0BB78001C18FF /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				33F0F1FDB8061B56ED028256 /* [CP] Check Pods Manifest.lock */,
+				FD6235E79C3BDC14CE89D43E /* [CP] Check Pods Manifest.lock */,
 				888B48BA29D0BB78001C18FF /* Sources */,
 				888B48BB29D0BB78001C18FF /* Frameworks */,
 				888B48BC29D0BB78001C18FF /* Resources */,
@@ -393,7 +393,7 @@
 				};
 			};
 			buildConfigurationList = 8880803729CF8CF900A36C35 /* Build configuration list for PBXProject "PinkoWinNew" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -436,7 +436,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E6ACD5685A170C28DDEF572 /* [CP] Check Pods Manifest.lock */ = {
+		2130D5864634AAA7981F1176 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		684C2008D71DED14D4F96264 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -458,7 +475,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33F0F1FDB8061B56ED028256 /* [CP] Check Pods Manifest.lock */ = {
+		8880809429CF986300A36C35 /* Copy Web App */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Web App";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_NAME=\"onboarding\"\nEMBEDDED_DIR=\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.app/portals\"\nEMBEDDED_APP=\"${SRCROOT}/../dist\"\nZIP_FILE=\"${APP_NAME}.zip\"\n\nmkdir \"${EMBEDDED_DIR}\"\n\nif [ -d \"${EMBEDDED_DIR}/${APP_NAME}\" ]\nthen\n    cd \"${EMBEDDED_DIR}\"\n    rm -r \"${APP_NAME}\"\nfi\n\nmkdir \"${EMBEDDED_DIR}/${APP_NAME}\"\n\nif [ -d \"${EMBEDDED_APP}\" ] \nthen\n    cd \"${EMBEDDED_APP}\"\n    zip -vr \"${ZIP_FILE}\" * -x \"*.DS_Store\"\n    unzip \"${ZIP_FILE}\" -d \"${EMBEDDED_DIR}/${APP_NAME}\"\n    rm \"${ZIP_FILE}\"\nelse\n    echo \"App ${APP_NAME} has not been built!\"\n    exit 999\nfi\n";
+		};
+		FD6235E79C3BDC14CE89D43E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -479,41 +514,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		59EC4933AE6F8928E7D30B63 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinkoWinNew/Pods-PinkoWinNew-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8880809429CF986300A36C35 /* Copy Web App */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Web App";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_NAME=\"onboarding\"\nEMBEDDED_DIR=\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.app/portals\"\nEMBEDDED_APP=\"${SRCROOT}/../dist\"\nZIP_FILE=\"${APP_NAME}.zip\"\n\nmkdir \"${EMBEDDED_DIR}\"\n\nif [ -d \"${EMBEDDED_DIR}/${APP_NAME}\" ]\nthen\n    cd \"${EMBEDDED_DIR}\"\n    rm -r \"${APP_NAME}\"\nfi\n\nmkdir \"${EMBEDDED_DIR}/${APP_NAME}\"\n\nif [ -d \"${EMBEDDED_APP}\" ] \nthen\n    cd \"${EMBEDDED_APP}\"\n    zip -vr \"${ZIP_FILE}\" * -x \"*.DS_Store\"\n    unzip \"${ZIP_FILE}\" -d \"${EMBEDDED_DIR}/${APP_NAME}\"\n    rm \"${ZIP_FILE}\"\nelse\n    echo \"App ${APP_NAME} has not been built!\"\n    exit 999\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -705,7 +705,7 @@
 		};
 		8880805429CF8CFB00A36C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CF8394DE843E3FB88A12F92 /* Pods-PinkoWinNew.debug.xcconfig */;
+			baseConfigurationReference = 4B38E56F69CBFC0534320858 /* Pods-PinkoWinNew.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -713,7 +713,7 @@
 				CODE_SIGN_ENTITLEMENTS = PinkoWinNew/PinkoWinNew.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 835Q36ABVR;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -732,7 +732,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkoWinNew2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -745,7 +745,7 @@
 		};
 		8880805529CF8CFB00A36C35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83438432696938B388F020BE /* Pods-PinkoWinNew.release.xcconfig */;
+			baseConfigurationReference = EE74C10BB526455F546B5B58 /* Pods-PinkoWinNew.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -753,7 +753,7 @@
 				CODE_SIGN_ENTITLEMENTS = PinkoWinNew/PinkoWinNew.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 835Q36ABVR;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -772,7 +772,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinkoWinNew2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -785,11 +785,11 @@
 		};
 		888B48C729D0BB78001C18FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B8B065F768A5BECA3EB31F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = BAC30B65EA472879CA9EC359 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 835Q36ABVR;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -815,11 +815,11 @@
 		};
 		888B48C829D0BB78001C18FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53D47AAC52AD0E5EAC7A2FFB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 2E621F80A668152BD01B3A25 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 835Q36ABVR;
 				GENERATE_INFOPLIST_FILE = YES;
