@@ -120,6 +120,6 @@ class WheelViewController: PortraitViewController {
 extension WheelViewController: AlertDelegate {
     func okAction() {
         animateOut()
-        dismiss(animated: true)
+        self.performSegue(withIdentifier: "mainVC", sender: nil)
     }
 }

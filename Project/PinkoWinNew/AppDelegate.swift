@@ -4,6 +4,7 @@ import OneSignal
 import AppsFlyerLib
 import AppTrackingTransparency
 import AdSupport
+import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -37,7 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("eb6b528e-9a45-4e15-b785-fb4082f27489")
-        
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+            ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        })
         
         self.requestIDFA {
             OneSignal.promptForPushNotifications(userResponse: { accepted in

@@ -41,6 +41,7 @@ class ShopViewController: PortraitViewController {
         balance = UserDefaults.standard.integer(forKey: "balance")
         setupViews()
         updateButtonTitles()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

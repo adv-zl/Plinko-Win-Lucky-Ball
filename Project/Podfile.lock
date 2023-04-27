@@ -4,11 +4,13 @@ PODS:
   - AppsFlyerFramework/Main (6.10.0)
   - Capacitor (3.7.0):
     - CapacitorCordova
-  - CapacitorCamera (4.1.4):
-    - Capacitor
   - CapacitorCordova (4.7.0)
-  - CapgoInappbrowser (0.3.22):
-    - Capacitor
+  - FBAEMKit (16.0.0):
+    - FBSDKCoreKit_Basics (= 16.0.0)
+  - FBSDKCoreKit (16.0.0):
+    - FBAEMKit (= 16.0.0)
+    - FBSDKCoreKit_Basics (= 16.0.0)
+  - FBSDKCoreKit_Basics (16.0.0)
   - Firebase/Analytics (10.7.0):
     - Firebase/Core
   - Firebase/Auth (10.7.0):
@@ -137,8 +139,7 @@ PODS:
 DEPENDENCIES:
   - AppsFlyerFramework
   - Capacitor
-  - CapacitorCamera
-  - "CapgoInappbrowser (from `../node_modules/@capgo/inappbrowser/CapgoInappbrowser.podspec`)"
+  - FBSDKCoreKit
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Database
@@ -150,8 +151,10 @@ SPEC REPOS:
   trunk:
     - AppsFlyerFramework
     - Capacitor
-    - CapacitorCamera
     - CapacitorCordova
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
     - Firebase
     - FirebaseAnalytics
     - FirebaseAppCheckInterop
@@ -173,16 +176,13 @@ SPEC REPOS:
     - OneSignalXCFramework
     - PromisesObjC
 
-EXTERNAL SOURCES:
-  CapgoInappbrowser:
-    :path: "../node_modules/@capgo/inappbrowser/CapgoInappbrowser.podspec"
-
 SPEC CHECKSUMS:
   AppsFlyerFramework: dc8599db42e1669388287d47a1f0e6b8aa35639e
   Capacitor: 747a1e47077e8f82abf2209867c440d7366ad68c
-  CapacitorCamera: 8e1f9eac46c6a0b7df5619d20f021d852ccaa99a
   CapacitorCordova: 49b11f2ce72487cd751aad7181606d2a710b1549
-  CapgoInappbrowser: bf5c99a95a7a98528c34fc3a8bf9710244c9edb7
+  FBAEMKit: 7fb5a0b5caf2ed2900e29c3a17de92ea7193a247
+  FBSDKCoreKit: 2a77418391aaa5da38ebf57b90b6de42cebcce6a
+  FBSDKCoreKit_Basics: 65c5b3146f38705b95338b54f68ea086bcc468dd
   Firebase: 0219acf760880eeec8ce479895bd7767466d9f81
   FirebaseAnalytics: f8133442ee6f8512e28ff19e62ce15398bfaeace
   FirebaseAppCheckInterop: 8e907eea79958960a8bd2058e067f31e03a7914b
@@ -204,6 +204,6 @@ SPEC CHECKSUMS:
   OneSignalXCFramework: 087934ab0d4d7445fcf1c015c7c782359e26c020
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
 
-PODFILE CHECKSUM: 5f0ffae281d28bf80dc5352540391a18c9256386
+PODFILE CHECKSUM: 44abff7850280218bdb63cc7812c5f8bd6a8213d
 
 COCOAPODS: 1.12.0

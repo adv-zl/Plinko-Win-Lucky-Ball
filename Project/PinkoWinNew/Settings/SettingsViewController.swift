@@ -112,38 +112,6 @@ class SettingsViewController: PortraitViewController {
     
 }
 
-extension SettingsViewController {
-    
-    func setAccName(setName: String) {
-        
-        guard let userID = Auth.auth().currentUser?.uid else { return }
-        let db = Database.database().reference().child("users")
-        db.child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            let name = value?["name"] as? String ?? ""
-            if name != "" {
-                UserDefaults.standard.set(name, forKey: "userName")
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updateLabels"), object: nil)
-                self.performSegue(withIdentifier: "mainVC", sender: nil)
-            } else {
-                db.child(userID).updateChildValues(["name":setName]) {
-                    (error: Error?, ref:DatabaseReference) in
-                    if let error = error {
-                        self.view.hideLoading()
-                    } else {
-                        UserDefaults.standard.set(setName, forKey: "name")
-                        self.performSegue(withIdentifier: "mainVC", sender: nil)
-                    }
-                }
-            }
-        }) { (error) in
-            self.view.hideLoading()
-            print(error.localizedDescription)
-        }
-    }
-    
-}
-
 extension SettingsViewController: AlertDelegate {
     func okAction() {
         animateOut()

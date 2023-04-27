@@ -1,6 +1,6 @@
 import UIKit
 import Firebase
-import IonicLiveUpdates
+import FBSDKCoreKit
 import IonicPortals
 
 class LoadingViewController: PortraitViewController {
@@ -16,9 +16,10 @@ class LoadingViewController: PortraitViewController {
             
         })
         
+        
         NotificationCenter.default.addObserver(self, selector: #selector(loadNext), name:NSNotification.Name(rawValue: "loadNext"), object: nil)
         PortalsRegistrationManager.shared.register(key: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjMmJjMWNlMS01NTJmLTQ0Y2YtOTM5YS1kYjUwMmVjMTAyMmQifQ.OhqiP3Hguok9yVfUZb06RSQ-K2TVapTdyFwNdMgae13ZMnBggQk4PxODeqHwK6Oz7LSkD_d5OT4XRepAY1NHfbVOWlG83WXMJcqL3uwUPOF0ehkIjJwZZfAdq-xRT-RZZWJus-kuZNAt-f0ANScDXVAoXrporaOEsV15LpeAwyNKKJ_QxlXEuqjukU1aCj1MoTOTnQw0mpaVlLXwm_OAqKaKT05jY5szF54DbQh_BWmYom-IpNMhZHpUxTVAjKBS3_utTy-6PJgOf2d6O85lCsReV7s7Rb1fs2PPX6bMGZ_AjYbH5k6Hr0-J88302OUyprBal_KOo7TBGA8-jE21xw")
-        try? LiveUpdateManager.shared.add(.onboarding)
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,26 +29,18 @@ class LoadingViewController: PortraitViewController {
     }
     
     @objc func loadNext() {
-        if State.shared.isNotFirstLaunch() {
+         if State.shared.isNotFirstLaunch() {
             continueLoad()
         } else {
             portalOnboarding.initialContext = ["startingRoute": "/onboarding", "paramsString": "?deviceID=\(UserDefaults.standard.value(forKey: "idfa") ?? "")&userID=\(UserDefaults.standard.value(forKey: "userID") ?? "")&campaign=\(UserDefaults.standard.value(forKey: "campaign") ?? "")"]
-            LiveUpdateManager.shared.sync(
-                isParallel: false,
-                syncComplete: {
-                    print("Sync completed!")
-                    
-                },
-                appComplete: { _ in
-                    print("App update complete")
+          
                     DispatchQueue.main.async {
                         let viewController = OnboardingVC()
                         viewController.modalPresentationStyle = .fullScreen
                         viewController.modalTransitionStyle = .crossDissolve
                         self.present(viewController, animated: true, completion: nil)
                     }
-                }
-            )
+                    //continueLoad()
         }
     }
     
@@ -91,17 +84,9 @@ class LoadingViewController: PortraitViewController {
 
 var portalOnboarding = Portal(
     name: "onboarding",
-    startDir: "portals/onboarding",
-    liveUpdateConfig: .onboarding
+    startDir: "portals/onboarding"
+
 )
 
-extension LiveUpdate {
-    private static let activeChannel = UserDefaults.standard.string(forKey: "active_channel") ?? "production"
-    
-    static let onboarding = Self(
-        appId: "e858d094",
-        channel: activeChannel,
-        syncOnAdd: false
-    )
-}
+
 
