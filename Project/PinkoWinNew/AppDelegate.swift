@@ -29,24 +29,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.launchOptions = launchOptions
         self.application = application
         
-        AppsFlyerLib.shared().appsFlyerDevKey = "8aLpiU4bwb6veyvUduxrfN"
+        AppsFlyerLib.shared().appsFlyerDevKey = "8HLhJCx26dDN9nTd6Q75XE"
         AppsFlyerLib.shared().appleAppID = "6446814935"
-        AppsFlyerLib.shared().delegate = self
         
         FirebaseApp.configure()
         
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("eb6b528e-9a45-4e15-b785-fb4082f27489")
-        OneSignal.promptForPushNotifications(userResponse: { accepted in
-            print("User accepted notifications: \(accepted)")
-            ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        })
         
         self.requestIDFA {
             OneSignal.promptForPushNotifications(userResponse: { accepted in
                 let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+                let userID = AppsFlyerLib.shared().getAppsFlyerUID()
                 UserDefaults.standard.set(idfa, forKey: "idfa")
+                UserDefaults.standard.set(userID, forKey: "userID")
+                ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
                 AppsFlyerLib.shared().start()
             })
         }
@@ -58,26 +56,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         return true
-    }
-}
-
-extension AppDelegate: AppsFlyerLibDelegate {
-    func onConversionDataSuccess(_ data: [AnyHashable: Any]) {
-        if let is_first_launch = data["is_first_launch"] as? Bool, is_first_launch {
-            if let status = data["af_status"] as? String {
-                if (status == "Non-organic") {
-                    if let campaign = data["campaign"] {
-                        let userID = AppsFlyerLib.shared().getAppsFlyerUID()
-                        UserDefaults.standard.set(userID, forKey: "userID")
-                        UserDefaults.standard.set(campaign, forKey: "campaign")
-                    }
-                }
-            }
-        }
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "loadNext"), object: nil)
-    }
-    
-    func onConversionDataFail(_ error: Error) {
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "loadNext"), object: nil)
     }
 }

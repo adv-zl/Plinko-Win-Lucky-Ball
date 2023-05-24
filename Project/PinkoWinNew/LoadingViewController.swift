@@ -19,7 +19,7 @@ class LoadingViewController: PortraitViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(loadNext), name:NSNotification.Name(rawValue: "loadNext"), object: nil)
         PortalsRegistrationManager.shared.register(key: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjMmJjMWNlMS01NTJmLTQ0Y2YtOTM5YS1kYjUwMmVjMTAyMmQifQ.OhqiP3Hguok9yVfUZb06RSQ-K2TVapTdyFwNdMgae13ZMnBggQk4PxODeqHwK6Oz7LSkD_d5OT4XRepAY1NHfbVOWlG83WXMJcqL3uwUPOF0ehkIjJwZZfAdq-xRT-RZZWJus-kuZNAt-f0ANScDXVAoXrporaOEsV15LpeAwyNKKJ_QxlXEuqjukU1aCj1MoTOTnQw0mpaVlLXwm_OAqKaKT05jY5szF54DbQh_BWmYom-IpNMhZHpUxTVAjKBS3_utTy-6PJgOf2d6O85lCsReV7s7Rb1fs2PPX6bMGZ_AjYbH5k6Hr0-J88302OUyprBal_KOo7TBGA8-jE21xw")
-     
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,18 +29,18 @@ class LoadingViewController: PortraitViewController {
     }
     
     @objc func loadNext() {
-         if State.shared.isNotFirstLaunch() {
+        if State.shared.isNotFirstLaunch() {
             continueLoad()
         } else {
-            portalOnboarding.initialContext = ["startingRoute": "/onboarding", "paramsString": "?deviceID=\(UserDefaults.standard.value(forKey: "idfa") ?? "")&userID=\(UserDefaults.standard.value(forKey: "userID") ?? "")&campaign=\(UserDefaults.standard.value(forKey: "campaign") ?? "")"]
-          
-                    DispatchQueue.main.async {
-                        let viewController = OnboardingVC()
-                        viewController.modalPresentationStyle = .fullScreen
-                        viewController.modalTransitionStyle = .crossDissolve
-                        self.present(viewController, animated: true, completion: nil)
-                    }
-                    //continueLoad()
+            portalOnboarding.initialContext = ["startingRoute": "/onboarding"]
+            
+            DispatchQueue.main.async {
+                let viewController = OnboardingVC()
+                viewController.modalPresentationStyle = .fullScreen
+                viewController.modalTransitionStyle = .crossDissolve
+                self.present(viewController, animated: true, completion: nil)
+            }
+            //continueLoad()
         }
     }
     
@@ -49,21 +49,21 @@ class LoadingViewController: PortraitViewController {
             if Auth.auth().currentUser != nil {
                 self.view.showLoading()
                 let userDefaults = UserDefaults.standard
-                        let lastLaunchDate = userDefaults.object(forKey: "lastLaunchDate") as? Date
-                        
-                        if let lastLaunchDate = lastLaunchDate, Calendar.current.isDateInToday(lastLaunchDate) {
-                            // User has launched the app today, go to mainVC
-                         
-                            self.performSegue(withIdentifier: "mainVC", sender: nil)
-                        } else {
-                            // User is launching the app for the first time today or after a day has passed, go to bonusVC
-                            userDefaults.set(Date(), forKey: "lastLaunchDate")
-                         
-                            self.performSegue(withIdentifier: "whellVC", sender: nil)
-                            
-                        }
+                let lastLaunchDate = userDefaults.object(forKey: "lastLaunchDate") as? Date
+                
+                if let lastLaunchDate = lastLaunchDate, Calendar.current.isDateInToday(lastLaunchDate) {
+                    // User has launched the app today, go to mainVC
                     
-               // self.performSegue(withIdentifier: "mainVC", sender: nil)
+                    self.performSegue(withIdentifier: "mainVC", sender: nil)
+                } else {
+                    // User is launching the app for the first time today or after a day has passed, go to bonusVC
+                    userDefaults.set(Date(), forKey: "lastLaunchDate")
+                    
+                    self.performSegue(withIdentifier: "whellVC", sender: nil)
+                    
+                }
+                
+                // self.performSegue(withIdentifier: "mainVC", sender: nil)
             } else {
                 self.view.showLoading()
                 Auth.auth().signInAnonymously { authResult, error in
@@ -85,7 +85,7 @@ class LoadingViewController: PortraitViewController {
 var portalOnboarding = Portal(
     name: "onboarding",
     startDir: "portals/onboarding"
-
+    
 )
 
 
